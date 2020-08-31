@@ -1,0 +1,26 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.dish {
+    border: solid 1px black;
+    border-radius: 0.8rem;
+    margin: 0.8rem 0;
+    padding: 0.7rem 1.2rem 0.7rem 0.7rem;
+}
+
+.menu__title--secondary {
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+}
+
+.dish__title {
+    margin-bottom: 0.4rem;
+}
+
+.dish__desc {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
