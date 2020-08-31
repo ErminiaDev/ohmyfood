@@ -1,11 +1,11 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "mobile first web app for preordering in restaurants",
+  "description": "mobile app for preordering in restaurants",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css",
-    "watch:css": "nodemon -e scss -x \"npm run build-css\""
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch:css": "nodemon -e scss -x \"npm run compile:sass\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/ErminiaDev/ohmyfood/issues"
   },
-  "homepage": "https://github.com/ErminiaDev/ohmyfood#readme"
+  "homepage": "https://github.com/ErminiaDev/ohmyfood#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1"
+  }
 }

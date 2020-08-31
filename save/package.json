@@ -1,0 +1,19 @@
+{
+  "name": "sass_netninja",
+  "version": "1.0.0",
+  "description": "sass tutorial from NetNinja Youtube",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass final/styles.scss css/styles.css -w",
+    "watch:css": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "author": "Marine",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
