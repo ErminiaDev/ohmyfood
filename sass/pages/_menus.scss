@@ -4,10 +4,19 @@ img {
 }
 
 .dish {
-    border: solid 1px black;
+    border: solid 1px $color-light;
     border-radius: 0.8rem;
     margin: 0.8rem 0;
     padding: 0.7rem 1.2rem 0.7rem 0.7rem;
+    background-color: $color-light;
+    &__title {
+        margin-bottom: 0.4rem;
+    }
+    &__desc {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .menu__title--secondary {
@@ -15,12 +24,3 @@ img {
     margin-left: 0.2rem;
 }
 
-.dish__title {
-    margin-bottom: 0.4rem;
-}
-
-.dish__desc {
-    margin-bottom: 0;
-    display: flex;
-    justify-content: space-between;
-}
