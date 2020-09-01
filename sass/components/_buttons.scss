@@ -1,0 +1,14 @@
+.cta__btn {
+    padding:0.8rem 1.3rem;
+}
+ .order__btn {
+    padding:0.8rem 4rem;
+ }
+
+.cta__btn, .order__btn {
+    margin-bottom: 1.4rem;
+    border-radius: 2rem;
+    background-color: $color-primary;
+    border: none;
+    color: $color-light;
+}

@@ -1,0 +1,18 @@
+.localisation {
+    background-color: $color-gray-medium;
+    padding: 0.7rem 0;
+    &__icon {
+        padding-right: 1rem;
+    }
+}
+
+.cta {
+    background-color: $color-gray-light;
+    padding:1.6rem;
+    & .title__secondary {
+        padding-bottom: 1.8rem;
+    }
+    &__subtitle {
+        padding-bottom: 1.4rem;
+    }
+}

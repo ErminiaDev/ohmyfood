@@ -5,7 +5,8 @@ html, body {
   padding: 0; }
 
 h1, h2, h3, h4, p {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 0; }
 
 img {
   border: 0; }
@@ -27,8 +28,14 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 .localisation__city {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center; }
+
+.localisation__icon {
+  font-size: 0.8rem; }
+
+.cta {
   text-align: center; }
 
 .header__title {
@@ -57,10 +64,27 @@ body {
 .dish__price {
   font-weight: 500; }
 
+.order {
+  text-align: center; }
+
 .header {
   height: 3.2rem; }
   .header__title {
     padding-top: 0.7rem; }
+
+.localisation {
+  background-color: #eaeaea;
+  padding: 0.7rem 0; }
+  .localisation__icon {
+    padding-right: 1rem; }
+
+.cta {
+  background-color: #f4f4f4;
+  padding: 1.6rem; }
+  .cta .title__secondary {
+    padding-bottom: 1.8rem; }
+  .cta__subtitle {
+    padding-bottom: 1.4rem; }
 
 .header__return-icon {
   position: absolute;
@@ -89,3 +113,19 @@ img {
   .menu__title--secondary--underline {
     border-bottom: 0.2rem solid #99E2D0;
     padding-bottom: 0.15rem; }
+
+.order {
+  padding: 1.8rem; }
+
+.cta__btn {
+  padding: 0.8rem 1.3rem; }
+
+.order__btn {
+  padding: 0.8rem 4rem; }
+
+.cta__btn, .order__btn {
+  margin-bottom: 1.4rem;
+  border-radius: 2rem;
+  background-color: #9356DC;
+  border: none;
+  color: white; }

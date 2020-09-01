@@ -5,25 +5,33 @@ body {
     font-family: 'Roboto', sans-serif; 
 }
 
-.localisation__city {
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
+.localisation {
+    &__city {
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    &__icon {
+        font-size: 0.8rem;
+    }
 }
+
+ .cta {
+     text-align: center;
+ }
 
 .header__title {
     @include font-primary;
     text-align: center;
 }
-
-.menu__title--primary {
-    @include font-primary;
-}
-
-.menu__title--secondary {
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: 300;
+.menu {
+    &__title--primary {
+    @include font-primary;}
+    &__title--secondary {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
 }
 
 .dish{
@@ -39,3 +47,6 @@ body {
     }
 }
 
+.order {
+    text-align: center;
+}
