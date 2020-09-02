@@ -80,9 +80,7 @@
         content: '\f004';
         }
         &:active::after {
-            font-family: "Font Awesome 5 Free";
             font-weight: 700;
-            content: '\f004';
         }
     }
     &__status {
