@@ -60,6 +60,15 @@ body {
   font-size: 0.9rem;
   font-weight: 300; }
 
+.card {
+  text-decoration: none; }
+  .card:visited {
+    color: black; }
+  .card__like {
+    font-size: 1.3rem; }
+    .card__like:active::after {
+      color: #9356DC; }
+
 .dish__title {
   font-weight: 500; }
 
@@ -117,6 +126,40 @@ body {
 .restaurants {
   background-color: #f4f4f4;
   padding: 3rem 1.5rem; }
+
+.card__content {
+  position: relative;
+  background-color: white;
+  margin: 1.2rem 0.3rem;
+  border-radius: 1.2rem; }
+
+.card__img {
+  height: 10rem;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  object-fit: cover;
+  object-position: bottom; }
+  .card__img--lower {
+    object-position: 0 -3.3rem; }
+
+.card__text {
+  padding: 0.9rem; }
+
+.card__like::after {
+  position: absolute;
+  top: 11.5rem;
+  left: 16rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: '\f004'; }
+
+.card__like:active::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: '\f004'; }
+
+.card__status {
+  position: absolute; }
 
 .header__return-icon {
   position: absolute;

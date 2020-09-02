@@ -44,6 +44,19 @@ body {
     }
 }
 
+.card {
+    text-decoration: none;
+    &:visited {
+        color: black;
+    }
+    &__like {
+        font-size: 1.3rem;
+        &:active::after {
+            color: $color-primary;
+        }
+    }
+}
+
 .dish{
     &__title {
         font-weight: 500;

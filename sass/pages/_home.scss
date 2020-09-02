@@ -25,8 +25,7 @@
     &__item {
         background-color: $color-gray-light;;
         padding: 1.5rem;
-        margin:1.2rem 0.3rem;
-        border-radius: 1.2rem;
+        @include card-structure;
         &:hover {
         .instructions__icon {
             color: saturate($color-primary, 100%);
@@ -50,4 +49,43 @@
 .restaurants {
     background-color: $color-gray-light;
     padding: 3rem 1.5rem;
+}
+
+.card {
+    &__content {
+        position: relative;
+        background-color: $color-light;
+        @include card-structure;
+    }
+    &__img {
+        height: 10rem;
+        border-top-left-radius: 1.2rem ;
+        border-top-right-radius: 1.2rem;
+        object-fit: cover;
+        object-position: bottom;
+        &--lower {
+            object-position: 0 -3.3rem;
+        }
+    }
+    &__text {
+        padding: 0.9rem;
+    }
+    &__like{
+        &::after {
+        position: absolute;
+        top: 11.5rem;
+        left: 16rem;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400;
+        content: '\f004';
+        }
+        &:active::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            content: '\f004';
+        }
+    }
+    &__status {
+        position: absolute;
+    }
 }
