@@ -16,3 +16,38 @@
         padding-bottom: 1.4rem;
     }
 }
+
+.instructions {
+    padding: 2.5rem 1.5rem 1.8rem 1.5rem;
+    &__content {
+        padding-bottom: 1rem;
+    }
+    &__item {
+        background-color: $color-gray-light;;
+        padding: 1.5rem;
+        margin:1.2rem 0.3rem;
+        border-radius: 1.2rem;
+        &:hover {
+        .instructions__icon {
+            color: saturate($color-primary, 100%);
+            }
+        }
+    }
+    &__steps {
+        position: absolute;
+        background-color: $color-primary;
+        color: $color-light;
+        padding: 0.2rem 0.42rem;
+        left: 1.1rem;
+        border-radius: 50%;
+    }
+    &__icon {
+        color: $color-gray-dark;
+        padding:0 0.7rem;
+    }
+}
+
+.restaurants {
+    background-color: $color-gray-light;
+    padding: 3rem 1.5rem;
+}

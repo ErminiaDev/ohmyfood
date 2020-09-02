@@ -15,9 +15,9 @@ img {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
   box-sizing: border-box; }
   .wrapper--rounded {
+    padding: 0 20px;
     position: absolute;
     top: 17.5rem;
     padding-top: 1.7rem;
@@ -43,6 +43,12 @@ body {
   font-size: 1.4rem;
   letter-spacing: .07rem;
   text-align: center; }
+
+.instructions__text {
+  font-weight: 500; }
+
+.instructions__steps {
+  font-size: 0.8rem; }
 
 .menu__title--primary {
   font-family: 'Shrikhand', cursive;
@@ -85,6 +91,32 @@ body {
     padding-bottom: 1.8rem; }
   .cta__subtitle {
     padding-bottom: 1.4rem; }
+
+.instructions {
+  padding: 2.5rem 1.5rem 1.8rem 1.5rem; }
+  .instructions__content {
+    padding-bottom: 1rem; }
+  .instructions__item {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    margin: 1.2rem 0.3rem;
+    border-radius: 1.2rem; }
+    .instructions__item:hover .instructions__icon {
+      color: #9033ff; }
+  .instructions__steps {
+    position: absolute;
+    background-color: #9356DC;
+    color: white;
+    padding: 0.2rem 0.42rem;
+    left: 1.1rem;
+    border-radius: 50%; }
+  .instructions__icon {
+    color: #878787;
+    padding: 0 0.7rem; }
+
+.restaurants {
+  background-color: #f4f4f4;
+  padding: 3rem 1.5rem; }
 
 .header__return-icon {
   position: absolute;

@@ -24,6 +24,16 @@ body {
     @include font-primary;
     text-align: center;
 }
+
+.instructions{
+    &__text {
+        font-weight: 500;
+    }
+    &__steps {
+    font-size: 0.8rem;
+    }
+}
+
 .menu {
     &__title--primary {
     @include font-primary;}
