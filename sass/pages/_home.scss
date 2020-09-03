@@ -77,12 +77,12 @@
     }
     &__like__checkbox {
         position: absolute;
-        top: 1.5rem;
-        right:-30rem; //to make the real checkbox hidden
+        top: 5rem;
+        right:1.5rem; //to make the real checkbox hidden
         &::after {
         position: relative;
-        top: 9.5rem;
-        right:32rem;
+        top: 6.5rem;
+        right:0rem;
         font-family: "Font Awesome 5 Free";
         font-weight: 400;
         content: '\f004';
