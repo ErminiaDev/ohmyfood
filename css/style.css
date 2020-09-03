@@ -65,9 +65,9 @@ body {
   .card__link:visited {
     color: black; }
 
-.card__like {
+.card__like__checkbox {
   font-size: 1.3rem; }
-  .card__like:active::after {
+  .card__like__checkbox:checked::after {
     color: #9356DC; }
 
 .card__status {
@@ -154,17 +154,20 @@ body {
 .card__text {
   padding: 0.9rem; }
 
-.card__like::after {
+.card__like__checkbox {
   position: absolute;
-  top: 11.5rem;
-  right: 1.5rem;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: '\f004';
-  cursor: pointer; }
-
-.card__like:enabled::after {
-  font-weight: 700; }
+  top: 1.5rem;
+  right: -30rem; }
+  .card__like__checkbox::after {
+    position: relative;
+    top: 9.5rem;
+    right: 32rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: '\f004';
+    cursor: pointer; }
+  .card__like__checkbox:checked::after {
+    font-weight: 700; }
 
 .card__status {
   box-sizing: border-box;

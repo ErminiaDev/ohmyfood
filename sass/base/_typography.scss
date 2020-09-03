@@ -51,9 +51,9 @@ body {
             color: black;
         }
     }
-    &__like {
+    &__like__checkbox {
         font-size: 1.3rem;
-        &:active::after {
+        &:checked::after {
             color: $color-primary;
         }
     }
