@@ -60,18 +60,20 @@ body {
   font-size: 0.9rem;
   font-weight: 300; }
 
-.card {
+.card__link {
   text-decoration: none; }
-  .card:visited {
+  .card__link:visited {
     color: black; }
-  .card__like {
-    font-size: 1.3rem; }
-    .card__like:active::after {
-      color: #9356DC; }
-  .card__status {
-    color: #278870;
-    font-size: 0.8rem;
-    font-weight: 500; }
+
+.card__like {
+  font-size: 1.3rem; }
+  .card__like:active::after {
+    color: #9356DC; }
+
+.card__status {
+  color: #278870;
+  font-size: 0.8rem;
+  font-weight: 500; }
 
 .dish__title {
   font-weight: 500; }
@@ -127,7 +129,7 @@ body {
     color: #878787;
     padding: 0 0.7rem; }
 
-.restaurants {
+#restaurants {
   background-color: #f4f4f4;
   padding: 3rem 1.5rem; }
 
@@ -146,9 +148,11 @@ body {
   .card__img--lower {
     object-position: 0 -3.3rem; }
 
-.card__text {
-  padding: 0.9rem;
+.card__link {
   cursor: pointer; }
+
+.card__text {
+  padding: 0.9rem; }
 
 .card__like::after {
   position: absolute;
@@ -159,7 +163,7 @@ body {
   content: '\f004';
   cursor: pointer; }
 
-.card__like:active::after {
+.card__like:enabled::after {
   font-weight: 700; }
 
 .card__status {
@@ -212,6 +216,7 @@ img {
   padding: 0.8rem 4rem; }
 
 .cta__btn, .order__btn {
+  cursor: pointer;
   margin-bottom: 1.4rem;
   border-radius: 2rem;
   background-color: #9356DC;

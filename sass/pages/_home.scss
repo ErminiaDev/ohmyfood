@@ -46,7 +46,7 @@
     }
 }
 
-.restaurants {
+#restaurants {
     background-color: $color-gray-light;
     padding: 3rem 1.5rem;
 }
@@ -67,9 +67,11 @@
             object-position: 0 -3.3rem;
         }
     }
+    &__link {
+        cursor: pointer;
+    }
     &__text {
         padding: 0.9rem;
-        cursor: pointer;
     }
     &__like{
         &::after {
@@ -81,7 +83,7 @@
         content: '\f004';
         cursor: pointer;
         }
-        &:active::after {
+        &:enabled::after {
             font-weight: 700;
         }
     }

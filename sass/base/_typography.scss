@@ -45,9 +45,11 @@ body {
 }
 
 .card {
-    text-decoration: none;
-    &:visited {
-        color: black;
+    &__link {
+        text-decoration: none;
+        &:visited {
+            color: black;
+        }
     }
     &__like {
         font-size: 1.3rem;
