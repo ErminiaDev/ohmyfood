@@ -109,10 +109,11 @@ body {
   .card__link:visited {
     color: black; }
 
-.card__like__checkbox {
+.card__like-button {
   font-size: 1.3rem; }
-  .card__like__checkbox:checked::after {
-    color: #9356DC; }
+
+.card__like-input:checked ~ .card__like-label .card__like-button::after {
+  color: #9356DC; }
 
 .card__status {
   color: #278870;
@@ -200,20 +201,25 @@ body {
 .card__text {
   padding: 0.9rem; }
 
-.card__like__checkbox {
+.card__like-input {
   position: absolute;
-  top: 5rem;
-  right: 1.5rem; }
-  .card__like__checkbox::after {
-    position: relative;
-    top: 6.5rem;
-    right: 0rem;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    content: '\f004';
-    cursor: pointer; }
-  .card__like__checkbox:checked::after {
-    font-weight: 700; }
+  bottom: 2rem;
+  right: 1.2rem;
+  opacity: 0; }
+
+.card__like-input:checked ~ .card__like-label > .card__like-button::after {
+  font-weight: 700; }
+
+.card__like-button::after {
+  position: absolute;
+  bottom: 1.3rem;
+  right: 1rem;
+  height: 2rem;
+  width: 2rem;
+  content: '\f004';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  cursor: pointer; }
 
 .card__status {
   box-sizing: border-box;

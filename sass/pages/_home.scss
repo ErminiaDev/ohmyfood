@@ -75,22 +75,26 @@
     &__text {
         padding: 0.9rem;
     }
-    &__like__checkbox {
+    &__like-input {
         position: absolute;
-        top: 5rem;
-        right:1.5rem; //to make the real checkbox hidden
-        &::after {
-        position: relative;
-        top: 6.5rem;
-        right:0rem;
+        bottom: 2rem;
+        right: 1.2rem;
+        opacity: 0;
+    }
+    // when label associated to a checkbox is clicked, it checks the checkbox
+    &__like-input:checked ~ &__like-label > &__like-button::after {
+        font-weight: 700;
+    }
+    &__like-button::after {
+        position: absolute;
+        bottom: 1.3rem;
+        right: 1rem;
+        height: 2rem;
+        width: 2rem;
+        content:'\f004';
         font-family: "Font Awesome 5 Free";
         font-weight: 400;
-        content: '\f004';
         cursor: pointer;
-        }
-        &:checked::after {
-            font-weight: 700;
-        }
     }
     &__status {
         box-sizing: border-box;
