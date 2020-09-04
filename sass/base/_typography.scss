@@ -51,11 +51,13 @@ body {
             color: black;
         }
     }
-    &__like-button {
-        font-size: 1.3rem;
-    }
-    &__like-input:checked ~ &__like-label &__like-button::after {
-        color: $color-primary;
+    &__like {
+        &-label {
+            font-size: 1.3rem;
+        }
+        &-input:checked ~ &-label::after{
+            color: $color-primary;
+        }
     }
     &__status {
         color: $color-tertiary-dark;

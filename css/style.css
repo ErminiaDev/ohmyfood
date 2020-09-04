@@ -109,10 +109,10 @@ body {
   .card__link:visited {
     color: black; }
 
-.card__like-button {
+.card__like-label {
   font-size: 1.3rem; }
 
-.card__like-input:checked ~ .card__like-label .card__like-button::after {
+.card__like-input:checked ~ .card__like-label::after {
   color: #9356DC; }
 
 .card__status {
@@ -207,10 +207,10 @@ body {
   right: 1.2rem;
   opacity: 0; }
 
-.card__like-input:checked ~ .card__like-label > .card__like-button::after {
+.card__like-input:checked ~ .card__like-label::after {
   font-weight: 700; }
 
-.card__like-button::after {
+.card__like-label::after {
   position: absolute;
   bottom: 1.3rem;
   right: 1rem;
