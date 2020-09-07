@@ -33,19 +33,19 @@
             height: calc(1071.02px + 15rem);
         }
         &1-img::before {
-            background-image: url('../../img/img1.jpg');
+            background-image: url('../img/img1.jpg');
         }
         &2-img {
             height: calc(1150.58px + 15rem); 
             &::before {
-                background-image: url('../../img/img2.jpg');
+                background-image: url('../img/img2.jpg');
             }
         }
         &3-img::before {
-            background-image: url('../../img/img3.jpg');
+            background-image: url('../img/img3.jpg');
         }
-        &-4img::before {
-            background-image: url('../../img/img4.jpg');
+        &4-img::before {
+            background-image: url('../img/img4.jpg');
         }
     }
 
@@ -54,7 +54,7 @@
     z-index: 1;
         &::before {
         @include background-image;
-        background-image: url('../../img/img0.jpg');
+        background-image: url('../img/img0.jpg');
         }
     }
 
