@@ -38,15 +38,17 @@ img {
                 transform: rotate(360deg);
             }
         }
-        & > .dish__desc .dish__desc-ingredients {
-            width: 60%;
+        & > .dish__desc {
+            & .dish__desc-ingredients {
+                width: 60%;
+            }
+            & .dish__price {
+                padding-right: 3.7rem;
+            }
         }
-    }
-    &:hover > .dish__desc .dish__price {
-        padding-right: 3.7rem;
-    }
-    &:hover > .dish__title {
-        width: 70%;
+        & > .dish__title {
+            width: 70%;
+        }
     }
     &__title {
         margin-bottom: 0.4rem;
@@ -85,7 +87,6 @@ img {
         }
     }
 }
-
 
 .order {
     padding: 1.8rem;
