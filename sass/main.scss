@@ -1,7 +1,6 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/functions";
-@import "layout/mediaqueries";
 @import "base/base";
 @import "base/typography";
 @import "base/animations";
@@ -11,6 +10,7 @@
 @import "pages/home";
 @import "pages/menus";
 @import "components/buttons";
+@import "layout/mediaqueries";
 
 
 

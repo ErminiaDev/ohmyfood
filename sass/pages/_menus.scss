@@ -25,13 +25,19 @@ img {
     }
 }
 
-.menu__title--secondary {
+.menu{
+    &1-img, &2-img, &3-img, &4-img{
+        
+    }
+    &__title--secondary {
     margin: 2rem 0rem 1.1rem 0.3rem;
     &--underline {
         border-bottom: 0.2rem solid $color-tertiary;
         padding-bottom: 0.15rem;
+        }
     }
 }
+
 
 .order {
     padding: 1.8rem;

@@ -1,5 +1,9 @@
 .footer {
+    position:relative;
     background-color: $color-gray-dark;
+    &--menu{
+        margin-top: -1.8rem;
+    }
     &__content{
         padding: 1.25rem;
     }
