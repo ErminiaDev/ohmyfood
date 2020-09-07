@@ -50,14 +50,14 @@ img {
     }
     &__title {
         margin-bottom: 0.4rem;
-        @include text-overflox-transition;
+        @include text-overflow-transition;
     }
     &__desc {
         margin-bottom: 0;
         display: flex;
         justify-content: space-between;
         &-ingredients {
-            @include text-overflox-transition;
+            @include text-overflow-transition;
         }
     }
     &__price {
