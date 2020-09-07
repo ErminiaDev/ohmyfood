@@ -10,18 +10,69 @@ img {
 }
 
 .dish {
+    position: relative;
     border: solid 1px $color-light;
     border-radius: 0.8rem;
     margin: 0.8rem 0;
     padding: 0.7rem 1.2rem 0.7rem 0.7rem;
     background-color: $color-light;
+    &:hover {
+        & > .dish__choice {
+            position: absolute;
+            background-color: $color-tertiary;
+            width: 3.7rem;
+            height: 4.2rem;
+            bottom: -0.1rem;
+            right: -0.1rem;
+            border-top-right-radius: 0.8rem;
+            border-bottom-right-radius: 0.8rem;
+            overflow: hidden;
+            & .dish__choice-icon {
+                visibility: visible;
+                margin-top: 1.4rem;
+                font-size: 0.8rem;
+                color: $color-tertiary;
+                background-color: $color-light;
+                padding: 0.3rem;
+                border-radius: 50%;
+                transform: rotate(360deg);
+            }
+        }
+        & > .dish__desc .dish__desc-ingredients {
+            width: 60%;
+        }
+    }
+    &:hover > .dish__desc .dish__price {
+        padding-right: 3.7rem;
+    }
+    &:hover > .dish__title {
+        width: 70%;
+    }
     &__title {
         margin-bottom: 0.4rem;
+        @include text-overflox-transition;
     }
     &__desc {
         margin-bottom: 0;
         display: flex;
         justify-content: space-between;
+        &-ingredients {
+            @include text-overflox-transition;
+        }
+    }
+    &__price {
+        padding-right: 0;
+        transition: padding-right 0.5s;
+    }
+    &__choice {
+        text-align: center;
+        width: 0;
+        height: 0;
+        transition: width 0.6s;
+        &-icon {
+            visibility: hidden;
+            transition: transform 0.45s;
+        }
     }
 }
 
