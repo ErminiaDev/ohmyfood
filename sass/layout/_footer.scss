@@ -1,0 +1,15 @@
+.footer {
+    background-color: $color-gray-dark;
+    &__content{
+        padding: 1.25rem;
+    }
+    &__element {
+        padding-bottom: 0.4rem;
+        &-logo {
+            padding-bottom: 1rem;
+        }
+    }
+    &__element-icon {
+        padding-right: 0.4rem;
+    }
+}

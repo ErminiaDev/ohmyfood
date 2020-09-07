@@ -40,7 +40,9 @@
       object-fit: cover; }
   .wrapper {
     max-width: 950px;
-    left: calc((100vw - 950px)/2); } }
+    left: calc((100vw - 950px)/2); }
+  .footer {
+    padding-left: calc((100vw - 950px)/2); } }
 
 html, body {
   margin: 0;
@@ -133,10 +135,31 @@ body {
 .order {
   text-align: center; }
 
+.footer {
+  color: white; }
+  .footer__element {
+    font-size: 0.9rem; }
+    .footer__element-logo {
+      font-family: 'Shrikhand', cursive;
+      font-size: 1.1rem; }
+    .footer__element--bolder {
+      font-weight: 500; }
+
 .header {
   height: 3.2rem; }
   .header__title {
     padding-top: 0.7rem; }
+
+.footer {
+  background-color: #2d2d2d; }
+  .footer__content {
+    padding: 1.25rem; }
+  .footer__element {
+    padding-bottom: 0.4rem; }
+    .footer__element-logo {
+      padding-bottom: 1rem; }
+  .footer__element-icon {
+    padding-right: 0.4rem; }
 
 .localisation {
   background-color: #eaeaea;
@@ -173,7 +196,7 @@ body {
     left: 1.1rem;
     border-radius: 50%; }
   .instructions__icon {
-    color: #878787;
+    color: #2d2d2d;
     padding: 0 0.7rem; }
 
 #restaurants {

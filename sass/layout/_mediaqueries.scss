@@ -57,4 +57,8 @@
         max-width: 950px;
         left: calc((100vw - 950px)/2);
     }
+
+    .footer {
+       padding-left: calc((100vw - 950px)/2); 
+    }
 }

@@ -82,3 +82,18 @@ body {
 .order {
     text-align: center;
 }
+
+.footer {
+    color: $color-light;
+    &__element{
+        font-size: 0.9rem;
+        &-logo {
+            font-family: 'Shrikhand', cursive;
+            font-size: 1.1rem;;
+        }
+        &--bolder {
+            font-weight: 500;
+        }
+    }
+    
+}
