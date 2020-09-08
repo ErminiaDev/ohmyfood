@@ -28,6 +28,7 @@ body {
 .instructions{
     &__text {
         font-weight: 500;
+        font-size: 0.9rem;
     }
     &__steps {
     font-size: 0.8rem;
@@ -49,14 +50,6 @@ body {
         text-decoration: none;
         &:visited {
             color: black;
-        }
-    }
-    &__like {
-        &-label {
-            font-size: 1.3rem;
-        }
-        &-input:checked ~ &-label::after{
-            color: $color-primary;
         }
     }
     &__status {

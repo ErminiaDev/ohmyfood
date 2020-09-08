@@ -1,0 +1,56 @@
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dish {
+    animation: FadeIn 1s linear;
+    animation-fill-mode: forwards;
+    &:nth-of-type(3n+1){
+        animation-delay: 0.3s;
+    }
+    &:nth-of-type(3n+2){
+        animation-delay: 0.6s;
+    }
+    &:nth-of-type(3n){
+        animation-delay: 0.9s;
+    }
+    &--menu2{
+        &:nth-of-type(1){
+            animation-delay: 0.3s;
+        }
+        &:nth-of-type(2) {
+            animation-delay: 0.6s;
+        }
+        &:nth-of-type(3) {
+            animation-delay: 0.9s;
+        }
+        &:nth-of-type(4) {
+            animation-delay: 1.2s;
+        }
+    }
+    &:hover {
+        & > .dish__choice .dish__choice-icon {
+            transform: rotate(360deg);
+        }
+    }
+    &__title {
+        @include text-overflow-transition;
+    }
+    &__desc-ingredients {
+        @include text-overflow-transition;
+    }
+    &__price {
+        transition: padding-right 0.5s;
+    }
+    &__choice {
+        transition: width 0.6s;
+        &-icon {
+            transition: transform 0.45s;
+        }
+    }
+}
