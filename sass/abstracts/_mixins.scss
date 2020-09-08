@@ -4,9 +4,14 @@
     letter-spacing: .07rem;
 }
 
+@mixin box-shadow-gray {
+    box-shadow: 2px 2px 4px 2px $color-gray-medium;
+}
+
 @mixin card-structure {
     margin:1.2rem 0.3rem;
     border-radius: 1.2rem;
+    @include box-shadow-gray;
 }
 
 @mixin background-image {

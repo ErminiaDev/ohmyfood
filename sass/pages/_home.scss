@@ -25,7 +25,7 @@
         padding-bottom: 1rem;
     }
     &__item {
-        background-color: $color-gray-light;;
+        background-color: $color-gray-light;
         padding: 1.5rem;
         @include card-structure;
         &:hover {
