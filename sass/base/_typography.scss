@@ -35,6 +35,8 @@ body {
     }
 }
 
+
+
 .menu {
     &__title--primary {
     @include font-primary;}
@@ -46,6 +48,9 @@ body {
 }
 
 .card {
+    &__subtitle {
+        font-style: normal;
+    }
     &__link {
         text-decoration: none;
         &:visited {
