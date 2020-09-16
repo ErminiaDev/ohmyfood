@@ -21,8 +21,7 @@ body {
  }
 
 .header__title {
-    @include font-primary;
-    text-align: center;
+    display: none;
 }
 
 .instructions{

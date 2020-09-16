@@ -1,5 +1,6 @@
 .restaurant, .card {
     &__like {
+        position: relative;
         &-label {
             font-size: 1.3rem;
         }
@@ -29,8 +30,8 @@
 }
 
 .restaurant__like-label::after {
-    top: 2rem;
-    right: 2rem;
+    top:-2rem;
+    right: 0.7rem;
 }
 
 .card__like-label::after {

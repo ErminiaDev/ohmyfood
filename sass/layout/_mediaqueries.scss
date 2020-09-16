@@ -17,6 +17,12 @@
 }
 
 @media screen and (min-width: 950px) {
+    .header {
+        height: 6rem;
+        &__img {
+            width: 18rem
+        }
+    }
     .hero-img {
         display: none;
     }
