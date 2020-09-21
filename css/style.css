@@ -427,11 +427,6 @@ img {
   .card {
     width: 48%;
     margin: 1%; }
-  .hero-img {
-    opacity: 0.5;
-    height: 1300px; }
-    .hero-img img {
-      object-fit: cover; }
   .wrapper {
     max-width: 950px;
     left: calc((100vw - 950px)/2); }
