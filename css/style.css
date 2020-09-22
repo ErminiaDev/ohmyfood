@@ -319,6 +319,7 @@ img {
   padding: 1.8rem; }
 
 .cta__btn {
+  display: inline-block;
   padding: 0.8rem 1.3rem;
   text-decoration: none; }
   .cta__btn a {
