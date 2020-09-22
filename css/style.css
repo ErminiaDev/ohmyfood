@@ -182,6 +182,8 @@ body {
     padding-bottom: 1.8rem; }
   .cta__subtitle {
     padding-bottom: 1.4rem; }
+  .cta__link {
+    text-decoration: none; }
 
 .instructions {
   position: relative;
@@ -317,10 +319,14 @@ img {
   padding: 1.8rem; }
 
 .cta__btn {
-  padding: 0.8rem 1.3rem; }
+  padding: 0.8rem 1.3rem;
+  text-decoration: none; }
+  .cta__btn a {
+    color: white; }
 
 .order__btn {
-  padding: 0.8rem 4rem; }
+  padding: 0.8rem 4rem;
+  color: white; }
 
 .cta__btn, .order__btn {
   cursor: pointer;
@@ -328,8 +334,7 @@ img {
   border-radius: 2rem;
   background: linear-gradient(#dc56b5, #9356DC);
   box-shadow: 2px 2px 4px 2px #d7c0f2;
-  border: none;
-  color: white; }
+  border: none; }
 
 .restaurant__like, .card__like {
   position: relative; }

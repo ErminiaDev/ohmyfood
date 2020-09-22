@@ -1,8 +1,13 @@
-.cta__btn {
+.cta__btn{
     padding:0.8rem 1.3rem;
+    text-decoration: none;
+    & a {
+        color: $color-light;
+    }
 }
  .order__btn {
     padding:0.8rem 4rem;
+    color: $color-light;
  }
 
 .cta__btn, .order__btn {
@@ -12,5 +17,4 @@
     background: linear-gradient(adjust-hue($color-primary, 50deg), $color-primary);
     box-shadow: 2px 2px 4px 2px $color-primary-light;
     border: none;
-    color: $color-light;
 }
