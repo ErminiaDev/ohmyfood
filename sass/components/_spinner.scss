@@ -1,0 +1,15 @@
+.spinner__loader::before {
+    z-index: 10;
+    content:"";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 5rem;
+    width: 5rem;
+    margin: -2.5rem -2.5rem;
+    border-radius: 50%;
+    border: 6px solid $color-primary;
+    border-top-color: $color-secondary;
+}
+

@@ -35,13 +35,13 @@
                 }
         }
         &1-img, &3-img, &4-img {
-            height: calc(1071.02px + 15rem);
+            height: 82rem;
         }
         &1-img::before {
             background-image: url('../img/img1_lg.jpg');
         }
         &2-img {
-            height: calc(1150.58px + 15rem); 
+            height: 87rem; 
             &::before {
                 background-image: url('../img/img2_lg.jpg');
             }
@@ -76,7 +76,9 @@
         max-width: 950px;
         left: calc((100vw - 950px)/2);
         &--rounded {
-            top: 15rem;
+            position: absolute;
+            bottom: 0;
+            margin-top: 16rem;
         }
     }
 

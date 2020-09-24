@@ -6,134 +6,141 @@
     <meta name="description" content="application web mobile first pour la réservation à l'avance de menus dans des restaurants gourmets">
     <link rel="stylesheet" href="css/style.css">
     <title>OhMyFood</title>
+    <link rel="icon" href="img/favicon.ico" />
 </head>
 <body>
-    <header class="header header--shadowed">
-        <div class="header__content">
-            <h1 class="header__title">ohmyfood</h1>
-            <img src="img/ohmyfood.png" alt="logo de l'entreprise ohmyfood" class="header__img">
-        </div>
-    </header>
-    <div class="localisation">
-        <p class="localisation__city"><i class="localisation__icon fas fa-map-marker-alt"></i>Paris, Belleville</p>
+    <div class="spinner">
+        <div class="spinner__loader"></div>
     </div>
-    <div class="home-img">  
-        <div class="wrapper">
-            <section class="cta">
-                <h2 class="title__secondary">Book the menu you like</h2>
-                <div class="cta__subtitle">Discover top-of-the-art restaurants we picked for you</div>
-                    <div class="cta__btn">
-                        <a href="#restaurants" class="cta__link">
-                        Explore our restaurants
-                        </a>
-                    </div>
-            </section>
-            <section class="instructions">
-                <h2 class="title__secondary">How it works</h2>
-                <ul class="instructions__content">
-                    <li class="instructions__item">
-                            <p class="instructions__text">
-                                <span class="instructions__steps">1</span>
-                                <i class="instructions__icon fas fa-mobile-alt"></i>
-                                Choose a restaurant
-                            </p>
-                    </li>
-                    <li class="instructions__item">
-                            <p class="instructions__text">
-                                <span class="instructions__steps">2</span>
-                                <i class="instructions__icon fas fa-list"></i>
-                                Create your menu
-                            </p>
-                    </li>
-                    <li class="instructions__item">
-                            <p class="instructions__text">
-                                <span class="instructions__steps">3</span>
-                                <i class="instructions__icon fas fa-store"></i>
-                                Go enjoy it at the restaurant
-                            </p>
-                    </li>
-                </ul>
-            </section>
-            <section id="restaurants" class="restaurants">
-                <h2 class="title__secondary">Restaurants</h2>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="img/img1_sm.jpg" alt="plat typique du restaurant The Full Palette" class="card__img">
-                            <a href="Menu_1.html" class="card__link">
-                                <div class="card__text">
-                                    <h3 class="card__title">The Full Palette</h3>
-                                    <address class="card__subtitle">New York</address>
-                                </div>
-                            </a>
-                            <div class="card__like">
-                                <input type="checkbox" id="checkbox-1" class="card__like-input">
-                                <label for="checkbox-1" class="card__like-label"></label>
-                            </div>
-                            <div class="card__status">New</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="img/img2_sm.jpg" alt="plat typique du restaurant The Enchanted Plate" class="card__img card__img--lower">
-                            <a href="Menu_2.html" class="card__link">
-                                <div class="card__text">
-                                    <h3 class="card__title">The Enchanted Plate</h3>
-                                    <address class="card__subtitle">New York</address>
-                                </div>
-                            </a>
-                            <div class="card__like">
-                                <input type="checkbox" id="checkbox-2" class="card__like-input">
-                                <label for="checkbox-2" class="card__like-label"></label>
-                            </div>
-                            <div class="card__status">New</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="img/img3_sm.jpg" alt="plat typique du restaurant Bastille" class="card__img">
-                            <a href="Menu_3.html" class="card__link">
-                                <div class="card__text">
-                                    <h3 class="card__title">Bastille</h3>
-                                    <address class="card__subtitle">New York</address>
-                                </div>
-                            </a>
-                            <div class="card__like">
-                                <input type="checkbox" id="checkbox-3" class="card__like-input">
-                                <label for="checkbox-3" class="card__like-label"></label>
-                            </div>
-                            <div class="card__status--inactive"></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="img/img4_sm.jpg" alt="plat typique du restaurant Le Gourmand" class="card__img">
-                            <a href="Menu_4.html" class="card__link">
-                                <div class="card__text">
-                                    <h3 class="card__title">Le Gourmand</h3>
-                                    <address class="card__subtitle">New York</address>
-                                </div>
-                            </a>
-                            <div class="card__like">
-                                <input type="checkbox" id="checkbox-4" class="card__like-input">
-                                <label for="checkbox-4" class="card__like-label"></label>
-                            </div>
-                            <div class="card__status--inactive"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div class="home-content">
+        <header class="header header--shadowed">
+            <div class="header__content">
+                <h1 class="header__title">ohmyfood</h1>
+                <img src="img/ohmyfood.png" alt="logo de ohmyfood" class="header__img">
+            </div>
+        </header>
+        <div class="localisation">
+            <p class="localisation__city"><i class="localisation__icon fas fa-map-marker-alt"></i>Paris, Belleville</p>
         </div>
+        <div class="home-img">  
+            <div class="wrapper">
+                <section class="cta">
+                    <h2 class="title__secondary">Book the menu you like</h2>
+                    <div class="cta__subtitle">Discover top-of-the-art restaurants we picked for you</div>
+                        <div class="cta__btn">
+                            <a href="#restaurants" class="cta__link">
+                            Explore our restaurants
+                            </a>
+                        </div>
+                </section>
+                <section class="instructions">
+                    <h2 class="title__secondary">How it works</h2>
+                    <ul class="instructions__content">
+                        <li class="instructions__item">
+                                <p class="instructions__text">
+                                    <span class="instructions__steps">1</span>
+                                    <i class="instructions__icon fas fa-mobile-alt"></i>
+                                    Choose a restaurant
+                                </p>
+                        </li>
+                        <li class="instructions__item">
+                                <p class="instructions__text">
+                                    <span class="instructions__steps">2</span>
+                                    <i class="instructions__icon fas fa-list"></i>
+                                    Create your menu
+                                </p>
+                        </li>
+                        <li class="instructions__item">
+                                <p class="instructions__text">
+                                    <span class="instructions__steps">3</span>
+                                    <i class="instructions__icon fas fa-store"></i>
+                                    Go enjoy it at the restaurant
+                                </p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="restaurants" class="restaurants">
+                    <h2 class="title__secondary">Restaurants</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card__content">
+                                <img src="img/img1_sm.jpg" alt="plat typique du restaurant The Full Palette" class="card__img">
+                                <a href="Menu_1.html" class="card__link">
+                                    <div class="card__text">
+                                        <h3 class="card__title">The Full Palette</h3>
+                                        <address class="card__subtitle">New York</address>
+                                    </div>
+                                </a>
+                                <div class="card__like">
+                                    <input type="checkbox" id="checkbox-1" class="card__like-input">
+                                    <label for="checkbox-1" class="card__like-label"></label>
+                                </div>
+                                <div class="card__status">New</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <img src="img/img2_sm.jpg" alt="plat typique du restaurant The Enchanted Plate" class="card__img card__img--lower">
+                                <a href="Menu_2.html" class="card__link">
+                                    <div class="card__text">
+                                        <h3 class="card__title">The Enchanted Plate</h3>
+                                        <address class="card__subtitle">New York</address>
+                                    </div>
+                                </a>
+                                <div class="card__like">
+                                    <input type="checkbox" id="checkbox-2" class="card__like-input">
+                                    <label for="checkbox-2" class="card__like-label"></label>
+                                </div>
+                                <div class="card__status">New</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <img src="img/img3_sm.jpg" alt="plat typique du restaurant Bastille" class="card__img">
+                                <a href="Menu_3.html" class="card__link">
+                                    <div class="card__text">
+                                        <h3 class="card__title">Bastille</h3>
+                                        <address class="card__subtitle">New York</address>
+                                    </div>
+                                </a>
+                                <div class="card__like">
+                                    <input type="checkbox" id="checkbox-3" class="card__like-input">
+                                    <label for="checkbox-3" class="card__like-label"></label>
+                                </div>
+                                <div class="card__status--inactive"></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <img src="img/img4_sm.jpg" alt="plat typique du restaurant Le Gourmand" class="card__img">
+                                <a href="Menu_4.html" class="card__link">
+                                    <div class="card__text">
+                                        <h3 class="card__title">Le Gourmand</h3>
+                                        <address class="card__subtitle">New York</address>
+                                    </div>
+                                </a>
+                                <div class="card__like">
+                                    <input type="checkbox" id="checkbox-4" class="card__like-input">
+                                    <label for="checkbox-4" class="card__like-label"></label>
+                                </div>
+                                <div class="card__status--inactive"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__content">
+                <p class="footer__element footer__element-logo">ohmyfood</p>
+                <p class="footer__element footer__element--bolder"><a><i class="footer__element-icon fas fa-utensils"></i>Suggest a restaurant</a></p>
+                <p class="footer__element footer__element--bolder"><a><i class="footer__element-icon fas fa-hands-helping"></i>Become a partner</a></p>
+                <p class="footer__element"><a>Legal</a></p>
+                <p class="footer__element"><a class="footer__element-link" href="mailto:contact@ohmyfood.com">Contact</a></p>
+            </div>
+        </footer>       
     </div>
-    <footer class="footer">
-        <div class="footer__content">
-            <p class="footer__element footer__element-logo">ohmyfood</p>
-            <p class="footer__element footer__element--bolder"><a><i class="footer__element-icon fas fa-utensils"></i>Suggest a restaurant</a></p>
-            <p class="footer__element footer__element--bolder"><a><i class="footer__element-icon fas fa-hands-helping"></i>Become a partner</a></p>
-            <p class="footer__element"><a>Legal</a></p>
-            <p class="footer__element"><a>Contact</a></p>
-        </div>
-    </footer>       
+    
     
     
 

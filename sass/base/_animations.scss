@@ -7,6 +7,33 @@
     }
 }
 
+@keyframes FadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.home-content {
+    animation: FadeIn 1s ease-in 2s;
+    animation-fill-mode: forwards;
+}
+.spinner {
+    animation: FadeOut 1s ease-out 1.6s;
+    animation-fill-mode: forwards;
+    &__loader::before {
+        animation: spinner 0.8s ease-in-out infinite;
+    }
+}
+
 .dish {
     animation: FadeIn 1s linear;
     animation-fill-mode: forwards;

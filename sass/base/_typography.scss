@@ -88,6 +88,14 @@ body {
             font-family: 'Shrikhand', cursive;
             font-size: 1.1rem;;
         }
+        &-link {
+            color: $color-light;
+            font-size: 0.9rem;
+            text-decoration: none;
+            &:hover {
+                font-weight: 500;
+            }
+        }
         &--bolder {
             font-weight: 500;
         }
